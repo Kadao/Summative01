@@ -1,17 +1,25 @@
-// Layout rules divide the page into sections. Layouts hold one or more modules together. Such as a header, main or footer class.
+// Layout
 
+.content {
+    .section_one {
 
+        @include flexLeft(column, unset);
+        
+        height: 785px;
+        background-image: url("https://i.imgur.com/dKw9Z0w.jpg");
+        background-repeat: no-repeat;
+        margin-top: -100px;
+        color: white;
+        height: -200px;
+    }
 
+    .section_two {
 
-// header {
-//     @include flexCenter(column, lightblue);
+        @include flexRight(column, unset);
 
-//     height: 100vh;
-//     button {
-//         background: $primaryBtn;
-//     }
-// }
-
-// .contact {
-//     @include flexCenter(row, grey);
-// }
+        height: 940px;
+        background-image: url("https://i.imgur.com/1YdljcL.jpg");
+        background-repeat: no-repeat;
+        color: white;
+    }   
+}

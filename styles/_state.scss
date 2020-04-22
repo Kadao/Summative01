@@ -1,1 +1,24 @@
-// State rules are ways to describe how our modules or layouts will look when in a particular state, hidden, active, etc.
+// State
+
+a:hover {
+    background-color: rgb(3, 103, 166);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+a#currentPg.active  {
+    background-color: rgb(3, 103, 166); 
+}
+
+h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button:focus {
+    outline: 0;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(3, 103, 166);
+  }

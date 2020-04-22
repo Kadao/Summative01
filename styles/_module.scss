@@ -1,1 +1,179 @@
-// Modules are the reusable, modular parts of our design. They are the sidebar sections, buttons, forms and so on.
+// Modules
+
+// Do not reuse
+.inlet_banner {
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid rgb(3, 103, 166);
+    width: 100%;
+    height: 150px;
+}
+
+.logo_banner {
+    position: absolute;
+    display: inline-block;
+    left: 30px;
+    top: 20px;
+}
+
+.nav {
+
+    @include navText;
+    @include flexNav;
+
+    z-index: 9999;
+    width: 100%;
+    height: 100px;
+
+    li {
+        float: right;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        background-color: #b0c4de;
+        padding: 36px;
+        width: 200px;
+        border: 1px solid rgb(3, 103, 166);
+    }
+}
+
+.section_one {
+
+    h1 {
+        @include primaryFont;
+        @include blockedContent;
+        margin-top: 40px;
+    }
+    
+    h2 {
+        @include primaryFontLarge;
+        @include blockedContentLarge;
+    }
+
+    h3 {
+        @include readMore;
+        margin-left: 150px;
+        margin-top: 50px;
+        width: 160px;
+    }
+
+    p {
+        @include sectionOneP;
+        @include blockedContent;
+    }
+}
+
+.section_two {
+
+    h4 {
+        @include primaryFont;
+        @include blockedContent;
+    }
+    
+    h5 {
+        @include primaryFontLarge;
+        @include blockedContentLarge;
+    }
+
+    p {
+        @include sectionTwoP;
+        @include blockedContent;
+    }
+
+    .mainBtn {
+        @include primaryBtn;
+    }
+
+    .optBtn {
+        @include secondaryBtn;
+    }
+}
+
+.formInfo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 720px;
+    margin-top: 60px;
+    margin-bottom: -150px;
+    width: 530px;
+    
+    h6 {
+        font-size: 42px;
+        font-weight: bold;
+    }
+}
+
+.contact {
+
+    @include formPos;
+
+    input[type=text], select {
+        width: 500px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      input[type=submit] {
+        width: 150px;
+        background-color: $btnColour;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .form {
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      label {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+}
+
+.additionalForms {
+
+    input[type=text], select {
+        width: 250px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      input[type=submit] {
+        width: 150px;
+        background-color: $btnColour;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .form {
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      label {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+}

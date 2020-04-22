@@ -1,8 +1,131 @@
-// @mixin flexCenter($direction, $background) {
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: $direction;
-//     background: $background;
-// }
+//  Mixins
+
+ @mixin flexNav {
+     height: 100px;
+     display: flex;
+     position: relative;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: row-reverse;
+ }
+
+@mixin navText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+@mixin flexLeft($direction, $background) {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: $direction;
+    background: $background;
+}
+
+@mixin flexRight($direction, $background) {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: $direction;
+    background: $background;
+}
+
+@mixin primaryFont {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@mixin primaryFontLarge {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@mixin blockedContentLarge {
+    margin-left: 165px;
+    width: 800px;
+}
+
+@mixin sectionOneP {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-right: 230px;
+    margin-top: 200px;
+    text-align: left;
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;   
+}
+
+@mixin sectionTwoP {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin-right: 230px;
+    margin-top: 200px;
+    text-align: right;
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;    
+}
+
+
+@mixin readMore {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@mixin blockedContent {
+    margin-left: 150px;
+    width: 800px;
+}
+
+@mixin primaryBtn {
+    background-color: $btnColour;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    outline: 0;
+    display: inline-block;
+    margin: 0 auto;
+    height: 50px;
+    padding-top: 15px;
+    margin-top: 200px;
+    margin-left: 700px;
+    width: 200px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+@mixin secondaryBtn {
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 32px;
+    outline: 0;
+    display: inline-block;
+    margin: 0 auto;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -65px;
+    margin-left: 950px;
+    width: 200px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+@mixin formPos {
+    margin-left: 720px;
+    margin-top: 200px;
+}
